@@ -276,7 +276,7 @@ class PlayerClient():
                 self.GAME_IP = msg.get("ip")
                 self.GAME_PORT = msg.get("port")
                 # RecvSend.sendJSON(self.socket_lobby, "room", "", state="GAME_START")
-                print("[GAME] Game is starting! Press Enter to Start the Game!")
+                print_ok("[GAME] Game is starting! Press Enter to Start the Game!")
                 if not self.isRoomHost:
                     RecvSend.sendJSON(self.socket_lobby, "room", "", state="GAME_START")
                     # print("[GAME] Game is starting! Press Enter to Start the Game!")
