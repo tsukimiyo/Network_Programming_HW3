@@ -1,1 +1,1 @@
-scp .\DB_Server.py .\developer_server.py .\lobby_server.py .\RecvSend.py chchang0202@linux1.cs.nycu.edu.tw:~/NP/HW3
+scp .\DB_server.py .\developer_server.py .\lobby_server.py .\RecvSend.py chchang0202@linux1.cs.nycu.edu.tw:~/NP/HW3
