@@ -20,4 +20,6 @@
 5. /developer/developer_client.py : 在class DeveloperClient()的 __init__中可以修改self.LOBBY_IP = ... (約程式碼第26行)
 
 如何使用example_games：
-將example_games底下的遊戲資料夾(ex: Connect_4)整份資料夾複製，並放到/developer/games/底下，接下來利用developer_client將遊戲檔案上傳至server即可。
+1. 將example_games底下的遊戲資料夾(ex: Connect_4)整份資料夾複製
+2. 放到/developer/games/底下
+3. 利用developer_client將遊戲檔案上傳至server
