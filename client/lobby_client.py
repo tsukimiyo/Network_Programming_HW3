@@ -169,12 +169,10 @@ class PlayerClient():
 
         if mtype == "state":
             state = msg.get("msg")
-            # central dispatcher for state codes
             self.handle_state(state, msg)
             return
 
         if mtype == "result":
-            # informational result (non-fatal)
             code = msg.get("msg")
             self.handle_result(code, msg)
             return
@@ -206,19 +204,15 @@ class PlayerClient():
                 
             elif state == "REGISTER_NAME":
                 print("Choose a username: ")
-                # RecvSend.sendJSON(self.socket_lobby, "response", name)
                 
             elif state == "REGISTER_PASS":
                 print("Choose a password: ")
-                # RecvSend.sendJSON(self.socket_lobby, "response", passwd)
                 
             elif state == "LOGIN_NAME":
                 print("Enter username: ")
-                #RecvSend.sendJSON(self.socket_lobby, "response", name)
                 
             elif state == "LOGIN_PASS":
                 print("Enter password: ")
-                #RecvSend.sendJSON(self.socket_lobby, "response", passwd)
                 
             elif state == "SHOW_LOBBY_MENU":
                 self.show_lobby_menu()
@@ -255,7 +249,7 @@ class PlayerClient():
                 
             elif state == "CHECK_BEFORE_GAME":
                 if not self.isRoomHost:
-                    print("[DEBUG] sent check version state to server")
+                    # print("[DEBUG] sent check version state to server")
                     RecvSend.sendJSON(self.socket_lobby, "state", "", state="CHECK_VERSION")
                 self.VerifyGameVersion(before_game_start=True)
                 
@@ -604,7 +598,7 @@ class PlayerClient():
                     print_error(f"[ERROR] Can't download the game: {game_name}.")
                     r = data.get("reason")
                     print_error(f"[ERROR] Reason : {r}")
-                    input("Press enter to continue...")
+                    # input("Press enter to continue...")
                     return
 
                 if "fileName" in data and "content" in data:

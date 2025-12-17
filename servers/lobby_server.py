@@ -428,13 +428,13 @@ class LobbyServer():
             # print("[DEBUG] Room query @ join room2")
             
             if len(room_status) == 0:
-                RecvSend.sendJSON(conn, "ERROR", "Room is closed by host...")
+                RecvSend.sendJSON(conn, "error", "Room is closed by host...")
                 return
             else:
                 room_status = room_status[0]
                 new_status = room_status.get("status")
                 if new_status == "full":
-                    RecvSend.sendJSON(conn, "ERROR", "Room is full...")
+                    RecvSend.sendJSON(conn, "error", "Room is full...")
                     return
             
             new_players = room_status.get("players")
