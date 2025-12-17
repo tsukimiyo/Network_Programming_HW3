@@ -1,7 +1,0 @@
-{
-    "game_name": "Connect_4",
-    "version": "1.0.100",
-    "description": "Fixed game ending font, very good game :(",
-    "game_type": "CLI",
-    "max_players": 2
-}
