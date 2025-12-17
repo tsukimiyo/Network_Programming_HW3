@@ -16,7 +16,7 @@ can correctly launch, manage, and connect players to your game.
 
 ---
 
-# 📌 Required Files
+# Required Files
 
 ## 1. game_server.py
 This file MUST provide the following function:
@@ -94,7 +94,7 @@ games/
         ├── game_client.py
         ├── config.json
         ├── README.md
-✔ You may now implement your game inside this folder.
+You may now implement your game inside this folder.
 
 Good luck!
 """
