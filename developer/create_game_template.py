@@ -181,7 +181,6 @@ def main():
         print("Usage: python create_game_template.py <game_name>")
         sys.exit(1)
 
-    # FIX IS HERE: Un-indent this line so it runs when arguments ARE correct
     game_name = sys.argv[1].strip()
 
     if not game_name:
