@@ -1,0 +1,7 @@
+{
+    "game_name": "Treasure's Island",
+    "version": "2.0.0",
+    "description": "ahhhh.",
+    "game_type": "CLI",
+    "max_players": 3
+}
