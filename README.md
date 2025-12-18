@@ -2,6 +2,8 @@
 
 請先將專案clone至本地端，並進入專案資料夾：
 
+請先由官方網站下載python 3.10
+
 若使用平台為Windows，請在專案目錄下開啟 PowerShell 執行以下指令
 1. 環境設定(Setup)： ./run.ps1 setup
 2. 啟動 Client： ./run.ps1 client
