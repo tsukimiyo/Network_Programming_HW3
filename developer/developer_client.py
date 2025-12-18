@@ -54,6 +54,9 @@ class DeveloperClient():
                     break
                 self.messageHandler(msg)
                 time.sleep(0.05)
+        except (OSError, ConnectionResetError):
+            print("[ERROR] Disconnected from the server...")
+            self.exitGame()
         except Exception as e:
             print(f"[ERROR] Exception {e} @ receiver loop")
             self.running = False

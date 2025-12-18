@@ -75,6 +75,9 @@ class PlayerClient():
                     break
                 self.messageHandler(msg)
                 time.sleep(0.05)
+        except (OSError, ConnectionResetError):
+            print("[ERROR] Disconnected from the server...")
+            return
         except Exception as e:
             print(f"[ERROR] Exception {e} @ receiver loop")
             self.running = False
@@ -134,6 +137,10 @@ class PlayerClient():
                 elif self.client_state == "GAME_START":
                     self.start_game()
                 
+        except (OSError, ConnectionResetError):
+            print("[ERROR] Disconnected from the server...")
+            self.exitGame()
+            return
         except (KeyboardInterrupt, EOFError):
             raise
         except Exception as e:
