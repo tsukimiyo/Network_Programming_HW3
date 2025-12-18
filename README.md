@@ -23,3 +23,37 @@
 1. 將example_games底下的遊戲資料夾(ex: Connect_4)整份資料夾複製
 2. 放到/developer/games/底下
 3. 利用developer_client將遊戲檔案上傳至server
+
+## File Sturcture : 
+```
+Network_Programming_HW3/
+├── client/
+│   ├── lobby_client.py
+│   ├── RecvSend.py
+│   └── installed_games/
+│
+├── developer/
+│   ├── create_game_template.py
+│   ├── developer_client.py
+│   ├── RecvSend.py
+│   └── games/
+│
+├── example_games/
+│   ├── Connect_4/
+│   ├── Liar's Dice/
+│   └── Treasure's Island/
+│
+├── servers/
+│   ├── developer_server.py
+│   ├── lobby_server.py
+│   ├── DB_server.py
+│   ├── RecvSend.py
+│   └── server_storage/
+│
+├── .gitignore
+├── Makefile
+├── README.md
+├── RecvSend.py
+├── requirements.txt
+└── run.ps1
+```
